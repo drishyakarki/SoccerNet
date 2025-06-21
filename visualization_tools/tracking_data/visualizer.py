@@ -66,12 +66,12 @@ class SoccerNetVisualizer:
        self.ball = None
        self.players = {}
             
-    def load_data(self, file_path):
+    def load_data(self, file_path, **kwargs):
         """Load data using appropriate reader."""
-        self.data_reader = DataReaderFactory.create_reader(file_path)
-        self.data = self.data_reader.load_data(file_path)
+        self.data_reader = DataReaderFactory.create_reader(file_path, **kwargs)
+        self.data = self.data_reader.load_data(file_path, **kwargs)
         return self
-        
+            
     def select_event(self, event_type, split='default', index=0):
         """
         Select an event for visualization.
