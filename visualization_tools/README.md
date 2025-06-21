@@ -52,6 +52,14 @@ Each object in a frame has a feature vector where:
 For reference, we have provided the data [here](https://drive.google.com/drive/u/2/folders/1nwGRzsB_ikVvClJOxfQju1CvoCHYT4FO). Download the sample dataset and place it in the `tracking_data/data/` directory.
 
 
+### JsonlBz2 Format
+
+This is the new format of tracking data from Fifa World Cup 2022. PFF FC provides tracking data. You can visit their website and download the data [here](https://www.blog.fc.pff.com/blog/enhanced-2022-world-cup-dataset). We are using the smoothed xy-coordinates of ball and player postions to construct interactive and comprehensive visualization of the game state in a mini-map format.
+
+![fifa_goal](visualizations/fifa_10502_GOAL.gif)
+
+You can easily plug and play with various configurations using the fifa_config.yaml file.
+
 ## 🚀 Quick Start
 
 ### Prerequisites
